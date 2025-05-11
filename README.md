@@ -21,4 +21,4 @@ MyMentor PRO - это современное веб-приложение для 
 ## Установка
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/yerasyl-hub/MyMentor-2.0.git
+   git clone https://github.com/yerasyl-hub/mentor2.git
