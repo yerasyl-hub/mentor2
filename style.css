@@ -406,28 +406,131 @@
         section:nth-child(5) {
             animation-delay: 0.4s;
         }
+        @media (max-width: 1024px) {
+            .container {
+                width: 95%;
+                padding: 1.5rem 0;
+            }
 
-        @media (max-width: 431px) {
-            .nav-container {
-                flex-direction: column;
-                gap: 1rem;
+            section {
+                padding: 1.5rem;
+                margin: 1.5rem 0;
+            }
+
+            .mentors-grid {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 1.5rem;
             }
 
             nav ul {
                 gap: 1rem;
-                overflow-x: auto;
-                width: 400px;
-                margin-top: 10px;
-                margin-bottom: 10px;
+            }
+
+            .contact-info {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1.5rem;
+            }
+        
+        @media (max-width: 767px) {
+            .container {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+            }
+
+            .logo {
+                margin-bottom: 1rem;
+            }
+
+            nav ul {
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            nav a {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 1rem;
+                margin: 1rem 0;
+                border-radius: 10px;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
             }
 
             .mentors-grid,
             .resources-grid {
                 grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .mentor-img {
+                height: 160px;
             }
 
             .goal-container,
             .add-task {
                 flex-direction: column;
+            }
+
+            input[type="text"],
+            input[type="url"],
+            button {
+                width: 100%;
+            }
+
+            button {
+                justify-content: center;
+            }
+
+            .task-item {
+                padding: 0.8rem;
+                align-items: flex-start;
+            }
+
+            .task-checkbox {
+                margin-top: 3px;
+            }
+
+            .task-actions {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card {
+                padding: 1rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .logo h1 {
+                font-size: 1.2rem;
+            }
+
+            .mentor-info h3 {
+                font-size: 1.1rem;
+            }
+
+            .mentor-specialization {
+                font-size: 0.7rem;
+            }
+
+            .task-link {
+                font-size: 0.8rem;
+                margin-right: 0.5rem;
             }
         }
